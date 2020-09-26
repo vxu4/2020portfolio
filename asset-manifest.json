@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/2020portfolio/static/css/main.4a49afab.chunk.css",
+    "main.js": "/2020portfolio/static/js/main.572242e8.chunk.js",
+    "main.js.map": "/2020portfolio/static/js/main.572242e8.chunk.js.map",
+    "runtime-main.js": "/2020portfolio/static/js/runtime-main.2bf4c0b2.js",
+    "runtime-main.js.map": "/2020portfolio/static/js/runtime-main.2bf4c0b2.js.map",
+    "static/css/2.3ab4c8ae.chunk.css": "/2020portfolio/static/css/2.3ab4c8ae.chunk.css",
+    "static/js/2.75197b40.chunk.js": "/2020portfolio/static/js/2.75197b40.chunk.js",
+    "static/js/2.75197b40.chunk.js.map": "/2020portfolio/static/js/2.75197b40.chunk.js.map",
+    "index.html": "/2020portfolio/index.html",
+    "precache-manifest.1a9b113148cec0e22941b59e61e60364.js": "/2020portfolio/precache-manifest.1a9b113148cec0e22941b59e61e60364.js",
+    "service-worker.js": "/2020portfolio/service-worker.js",
+    "static/css/2.3ab4c8ae.chunk.css.map": "/2020portfolio/static/css/2.3ab4c8ae.chunk.css.map",
+    "static/css/main.4a49afab.chunk.css.map": "/2020portfolio/static/css/main.4a49afab.chunk.css.map",
+    "static/js/2.75197b40.chunk.js.LICENSE.txt": "/2020portfolio/static/js/2.75197b40.chunk.js.LICENSE.txt",
+    "static/media/VXXBanner_md.png": "/2020portfolio/static/media/VXXBanner_md.d9f4498f.png",
+    "static/media/VXX_sm.png": "/2020portfolio/static/media/VXX_sm.afa4ab27.png",
+    "static/media/arrow.svg": "/2020portfolio/static/media/arrow.764e7c0d.svg",
+    "static/media/flowerNet.jpg": "/2020portfolio/static/media/flowerNet.51b7e1b3.jpg",
+    "static/media/home_artPic.png": "/2020portfolio/static/media/home_artPic.38e48a1d.png",
+    "static/media/home_artPic.jpg": "/2020portfolio/static/media/home_artPic.5e734d4a.jpg",
+    "static/media/home_devPic.png": "/2020portfolio/static/media/home_devPic.d6659b1a.png",
+    "static/media/home_filmPic.png": "/2020portfolio/static/media/home_filmPic.b291eebc.png",
+    "static/media/home_landingPic_2.jpg": "/2020portfolio/static/media/home_landingPic_2.9952f683.jpg",
+    "static/media/home_landingPic_3.jpg": "/2020portfolio/static/media/home_landingPic_3.170378d5.jpg",
+    "static/media/lattice.jpg": "/2020portfolio/static/media/lattice.5e18b098.jpg",
+    "static/media/redStory.png": "/2020portfolio/static/media/redStory.5a44cdd5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2bf4c0b2.js",
+    "static/css/2.3ab4c8ae.chunk.css",
+    "static/js/2.75197b40.chunk.js",
+    "static/css/main.4a49afab.chunk.css",
+    "static/js/main.572242e8.chunk.js"
+  ]
+}
