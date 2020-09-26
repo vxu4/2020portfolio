@@ -3,9 +3,11 @@ import {
   BrowserRouter, Switch, Route, Redirect
 } from 'react-router-dom';
 import '../node_modules/bootstrap/scss/bootstrap.scss';
-import './App.css';
+import './App.scss';
 import NotFound from './pages/Home';
 import Home from './pages/Home';
+import Art from './pages/Art';
+
 import NavBar from './components/NavBar';
 
 const RedirectToNotFound = () => <Redirect to="/404" />;

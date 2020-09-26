@@ -6,9 +6,10 @@ import logo from '../assets/figma/logo.png';
 
 const NavBar = () => {
   return (
-    <div className="w-100 d-flex flex-row justify-content-between align-items-center p-4" style={{position: 'fixed'}}>
-      <img src={logo} className="" style={{}} />
-      <img src={menu} className="" style={{}} />
+    <div className="w-100 d-flex flex-row justify-content-between align-items-center p-4" style={{position: 'fixed', zIndex: 50}}>
+      {/* <img src={logo} className="" style={{}} /> */}
+      <h1>Victoria Xu</h1>
+      <img src={menu} alt="menu icon" className="" style={{}} />
     </div>
   )
 }

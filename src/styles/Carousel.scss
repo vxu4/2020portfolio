@@ -1,0 +1,42 @@
+@import './Palette.scss';
+
+.arrow-icon {
+  padding: 0px 50px;
+  color: $transparent-black;
+  font-size: 100px;
+  z-index: 9999;
+  position: absolute;
+}
+
+// #prev {
+//   left: 20;
+//   position: fixed;
+// }
+
+// #next {
+//   right: -20;
+//   position: fixed;
+// }
+
+.arrow-icon :hover {
+  cursor: pointer;
+  color: $transparent-black;
+}
+
+.carousel-slot {
+  flex: 1 0 100%;
+}
+
+
+//   @media ${device.mobileS} {
+//       top: 400px;
+//       left: ${props => props.right ? "80%" : "1%"}; 
+//   }
+
+//   @media ${device.tablet} {
+//       left: ${props => props.right ? "82%" : "8%"}; 
+//   }
+
+//   @media ${device.laptop} {
+//       top: 150px;
+//   }

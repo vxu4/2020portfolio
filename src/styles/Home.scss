@@ -5,30 +5,26 @@
   width: 100%;
 }
 
-.subcat:hover {
-  color: $transparent-black;
-  transition: color .8s;
+.subcat-hover {
+  transition: color .4s background-color .4s opacity .4s;
   cursor: pointer;
-  // box-shadow: 0px 0.4px 0.4rem 0.06rem $box-shadow;
+  background-color: $box-shadow-dark;
+  color: #ffffff;
+  font-size: 48px;
 }
 
-.subcat:hover {
-  color: white;
-}
-
-#background {
-  width: 100vw;
-  height: 100vh;
-  background: url(../assets/home_landingPic.JPG) repeat 0px 0px;
-}
-
-#background a {
-  display: inline-block;
-  background: url(../assets/home_landingPic.JPG) no-repeat 0px 0px;
+.vxx-hover {
   opacity: 0;
+  transition: opacity .4s;
+  cursor: pointer;
 }
 
-#background a:hover {
-   opacity: 1;
+.vxx-hover:hover {
+  opacity: 1;
+}
+
+.fade {
+  transition: opacity .8s;
+  z-index: 0;
 }
 
