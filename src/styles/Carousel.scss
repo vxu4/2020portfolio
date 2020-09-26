@@ -1,22 +1,24 @@
 @import './Palette.scss';
 
+.carousel {
+  margin-left: -6vw;
+}
+
 .arrow-icon {
-  padding: 0px 50px;
   color: $transparent-black;
   font-size: 100px;
   z-index: 9999;
-  position: absolute;
+  position: relative;
+  margin-top: 15vh;
 }
 
-// #prev {
-//   left: 20;
-//   position: fixed;
-// }
+#prev {
+  left: 10vw;
+}
 
-// #next {
-//   right: -20;
-//   position: fixed;
-// }
+#next {
+  left: 90vw;
+}
 
 .arrow-icon :hover {
   cursor: pointer;

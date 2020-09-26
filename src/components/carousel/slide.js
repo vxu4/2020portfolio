@@ -16,7 +16,7 @@ import ImgThumbnail from "./imgThumbnail";
 //     @media ${device.mobileS} {
 //         height: 800px;
 //     }
-    
+
 //     @media ${device.laptop} {
 //         height: 500px;
 //     }
@@ -36,7 +36,7 @@ import ImgThumbnail from "./imgThumbnail";
 //         grid-template-columns: auto 70vw auto;
 //         grid-template-rows: auto auto;
 //     }
-    
+
 //     @media ${device.laptop} {
 //         grid-template-columns: auto 300px 500px auto;
 //         grid-template-rows: auto;
@@ -47,9 +47,10 @@ import ImgThumbnail from "./imgThumbnail";
 
 export const Slide = ({ ...props }) => (
   // <ThemeProvider theme={props.thumbnail.theme}>
-  <div style={{width: '100vw'}} className="bg-white m-0 p-0 d-flex flex-row justify-content-center align-items-center">
+  <div style={{ width: '100vw' }} className="bg-white m-0 p-0 d-flex flex-column justify-content-center align-items-center">
     {/* TODO: somehow make the constraint on height not on width */}
-    <img className="m-0 p-0" style={{height: '60vh'}} src={props.thumbnail.imgUrl} alt="art images" />
+    <img className="m-0 p-0" style={{ height: '30vw' }} src={props.thumbnail.imgUrl} alt="art images" />
+    <h6 className="pt-5 text-dark" >{props.thumbnail.title}</h6>
     {/* <OverLay>
       <ImgThumbnail src={props.thumbnail.imgUrl}></ImgThumbnail>
       <InfoThumbnail thumbnail={props.thumbnail}></InfoThumbnail>

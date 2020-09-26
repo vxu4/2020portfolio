@@ -64,7 +64,7 @@ class Home extends React.Component {
               style={{ position: 'static', marginTop: '-140px', marginLeft: '5px', width: '13.5%', zIndex: 10 }} />
 
             {/* subcategories */}
-            <span className="fade d-flex flex-row" style={{ opacity: `${this.state.landingText ? 1 : 1}`, zIndex: 20, marginTop: '70px' }}>
+            <span className="d-flex flex-row font-weight-bold" style={{ zIndex: 20, marginTop: '80px' }}>
               {/* TODO: differentiate hover state from selected state! and probably don't change bg if something is selected, until other thing selected */}
               <h2 className={`${(this.state.bgImage === 'artPic' || this.state.focus === 'artPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
                 onMouseOver={() => { if (!this.state.focus) {this.setState({ bgImage: 'artPic' })} }}

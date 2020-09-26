@@ -38,7 +38,6 @@ class Carousel extends React.Component {
   prevSlide = (event) => {
     //possible IMPROVEMENT: could have used the following and above edit to consolidate the function into one
     //which would also make the 'prev' and 'next' a variable :)
-    console.log(event.target.id);
     const curr = this.state.currIndex;
     const numItems = this.carouselThumbnails.length || 1;
     //updates currIndex based on next or prev
@@ -78,11 +77,12 @@ class Carousel extends React.Component {
       return 'translateX(0%)'
     }
     return (
-      <div className="d-flex flex-row w-100 overflow-hidden">
+      <div className="d-flex flex-row w-100 overflow-hidden carousel">
         <Arrow id="prev" onClick={this.prevSlide} right/>
+        <Arrow id="next" onClick={this.nextSlide}/>
         <div className="d-flex"
           style={{
-            transition: `${this.state.sliding ? 'none' : 'transform 0.3s ease'}`,
+            transition: `${this.state.sliding ? 'none' : 'transform 0.8s ease'}`,
             transform: `${transformReturn(this.state.sliding, this.state.slideDirection)}`
           }}>
           {
@@ -94,7 +94,6 @@ class Carousel extends React.Component {
             )
           }
         </div>
-        <Arrow id="next" onClick={this.nextSlide}/>
       </div>
     );
   }

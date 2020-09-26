@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import '../node_modules/bootstrap/scss/bootstrap.scss';
 import './App.scss';
+import './styles/BootstrapCustom.scss';
 import NotFound from './pages/Home';
 import Home from './pages/Home';
 import Art from './pages/Art';

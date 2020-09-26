@@ -9,20 +9,6 @@ html, body {
   width: 100%;
 }
 
-/* TODO: make font size dynamic!*/
-h1 {
-  font-family: "Kenia"; 
-  color: #ffffff;
-  text-shadow: 2px 2px $box-shadow-dark;
-}
-
-h2 {
-  font-family: 'Alata';
-  font-size: 32px;
-  color: $transparent-black;
-  text-shadow: 1px 1px $box-shadow-dark;
-  font-weight: 600;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

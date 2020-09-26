@@ -1,0 +1,40 @@
+// Overrides the default colors.
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "./Palette.scss";
+
+// Do not change the theme colors to something that works differently.
+// For example, don't change "dark" to be transparent or light gray.
+
+$theme-colors: (
+  "primary": $gold,
+  // "secondary": $intus-navy,
+  "dark": $dark-grey,
+  // "muted": $intus-gray,
+  // "danger": $risk-red,
+  // "info": $risk-blue,
+  // "warning": $risk-yellow,
+  // "success": $green,
+);
+
+@import "../../node_modules/bootstrap";
+
+.text-primary {
+  color: $gold;
+}
+
+/* TODO: make font size dynamic!*/
+h1 {
+  font-family: "Kenia"; 
+  color: #ffffff;
+  text-shadow: 1.5px 1px 2px $box-shadow-dark;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: 'Alata';
+  font-size: 28px;
+  color: $transparent-black;
+  text-shadow: 1px 1px $box-shadow-dark;
+  font-weight: 700;
+}

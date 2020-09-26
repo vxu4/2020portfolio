@@ -14,15 +14,14 @@ configureAnchors({ scrollDuration: 900 });
 
 const Art = () => {
   return (
-    <ScrollableAnchor id={'art'}>
 
     <div className="bg-white d-flex flex-column justify-content-center align-items-center" style={{ height: '800px' }}>
-      {/* <img src={artPic} alt="flower net on grass" className="w-50" /> */}
-      <AppsIcon className="mb-5"/>
+      <ScrollableAnchor id={'art'}>
+        <div style={{height: '10vh'}} />
+      </ScrollableAnchor>
+      <AppsIcon className="mb-5 text-dark cursor-pointer"/>
       <Carousel slides={carouselThumbnails}/>
-
     </div>
-    </ScrollableAnchor>
 
   )
 }
