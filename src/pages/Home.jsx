@@ -6,7 +6,6 @@ import devPic from '../assets/figma/home_devPic.png';
 import artPic from '../assets/flowerNet.jpg';
 import designPic from '../assets/lattice.jpg';
 import banner from '../assets/VXXBanner_md.png';
-import VXX from '../assets/VXX_sm.png';
 import arrow from '../assets/arrow.svg';
 import Art from './Art';
 import Film from './Film';
@@ -22,6 +21,22 @@ class Home extends React.Component {
       landingText: true
     };
   }
+
+  renderPreview(selected) {
+    if (selected === 'art') {
+      return (
+        <Art />
+      )
+    } else if (selected === 'film') {
+      return (
+        <Film />
+      )
+    } else if (selected === 'design') {
+      // return (
+      //   <
+      // )
+    }
+  }
   //maybe... componentdidmount to remove anchors? look thru tabs
 
   //TODO: menu icon
@@ -36,17 +51,15 @@ class Home extends React.Component {
         <div className="home">
           {/* background images */}
 
-          <img src={landingPic} alt="ink painting" className="fade w-100"
-            style={{ opacity: `${this.state.bgImage === 'landingPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={artPic} alt="flower net on grass" className="fade w-100"
+          <img src={artPic} alt="flower net on grass" className="fade h-100"
             style={{ opacity: `${this.state.bgImage === 'artPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={filmPic} alt="Alexis dancing with the sky" className="fade w-100"
+          <img src={filmPic} alt="Alexis dancing with the sky" className="fade h-100"
             style={{ opacity: `${this.state.bgImage === 'filmPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={devPic} alt="Frontend coding" className="fade w-100"
+          <img src={devPic} alt="Frontend coding" className="fade h-100"
             style={{ opacity: `${this.state.bgImage === 'devPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={vxx} alt="flower net on back" className="fade w-100"
+          <img src={vxx} alt="flower net on back" className="fade h-100"
             style={{ opacity: `${this.state.bgImage === 'vxx' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={designPic} alt="flower net on back" className="fade w-100"
+          <img src={designPic} alt="flower net on back" className="fade h-100"
             style={{ opacity: `${this.state.bgImage === 'designPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
 
           {/* TODO: make an icon that is 4 sq. grid to open up to grid view of art works */}
@@ -57,14 +70,9 @@ class Home extends React.Component {
             style={{ opacity: `${this.state.landingText ? 1 : 1}` }}>
             <img src={banner} alt="vxx banner" className="w-100 fade"
               style={{ opacity: `${this.state.banner ? 1 : 0}`, width: "100vw", maxWidth: '100vw', marginTop: '10vw', zIndex: 10 }} />
-            <img src={VXX} alt="vxx" className=""
-              style={{ opacity: `${this.state.focus ? 1 : 1}`, position: 'static', marginTop: '-30vw', marginLeft: '10px', width: '21vw', zIndex: 10 }} />
-            <img src={VXX} alt="vxx" className="vxx-hover cursor-pointer"
-              onMouseOver={() => { this.setState({ bgImage: 'vxx' }) }}
-              style={{ position: 'static', marginTop: '-140px', marginLeft: '5px', width: '13.5%', zIndex: 10 }} />
 
             {/* subcategories */}
-            <span className="d-flex flex-row font-weight-bold" style={{ zIndex: 20, marginTop: '80px' }}>
+            <span className="d-flex flex-row font-weight-bold" style={{ zIndex: 20, marginTop: '-180px' }}>
               {/* TODO: differentiate hover state from selected state! and probably don't change bg if something is selected, until other thing selected */}
               <h2 className={`${(this.state.bgImage === 'artPic' || this.state.focus === 'artPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
                 onMouseOver={() => { if (!this.state.focus) {this.setState({ bgImage: 'artPic' })} }}
@@ -90,9 +98,10 @@ class Home extends React.Component {
         </div>
 
         <div style={{ height: '1800px', position: 'sticky', maxWidth: '100vw'}} className="overflow-scroll w-100">
-          <div className="" style={{ height: '600px', maxWidth: '100vw' }}> </div>
-          <Art />
-          <Film />
+          <div className="" style={{ height: '60vh', maxWidth: '100vw' }}> </div>
+          {
+            this.renderPreview(this.state.focus)
+          }
         </div>
 
       </>

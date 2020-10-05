@@ -7,7 +7,7 @@ import './App.scss';
 import './styles/BootstrapCustom.scss';
 import NotFound from './pages/Home';
 import Home from './pages/Home';
-import Art from './pages/Art';
+import Art from './pages/Art_Overall';
 
 import NavBar from './components/NavBar';
 
@@ -20,10 +20,11 @@ const App = () => (
       <Switch>
         <Route exact path="/404" component={NotFound} />
         <Route exact path="/" component={Home} />
+        <Route exact path="/Art" component={Art} />
         <Route component={RedirectToNotFound} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </BrowserRouter> 
 );
 
 export default App;
