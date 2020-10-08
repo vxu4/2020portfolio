@@ -1,0 +1,12 @@
+@import './Palette.scss';
+
+.grid-icon {
+  cursor: pointer;
+  color: $dark-grey;
+}
+
+.grid-icon:hover {
+  transition: color .6s background-color .6s opacity .6s;
+  cursor: pointer;
+  color: $gold;
+}

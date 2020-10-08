@@ -43,7 +43,8 @@ class Home extends React.Component {
   //arrow function? consider making this all a banner component? and rendering a totally separate component underneath?
   render() {
     const fadeBanner = (subCat) => {
-      this.setState({ banner: false, focus: subCat });
+      console.log('hi');
+      this.setState({ banner: false, bgImage: subCat, focus: subCat });
     }
 
     return (
@@ -51,16 +52,16 @@ class Home extends React.Component {
         <div className="home">
           {/* background images */}
 
-          <img src={artPic} alt="flower net on grass" className="fade h-100"
-            style={{ opacity: `${this.state.bgImage === 'artPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={filmPic} alt="Alexis dancing with the sky" className="fade h-100"
-            style={{ opacity: `${this.state.bgImage === 'filmPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={devPic} alt="Frontend coding" className="fade h-100"
-            style={{ opacity: `${this.state.bgImage === 'devPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={vxx} alt="flower net on back" className="fade h-100"
+          <img src={artPic} alt="flower net on grass" className="fade w-100"
+            style={{ opacity: `${this.state.bgImage === 'art' ? 1 : 0}`, position: 'fixed', top: 0 }} />
+          <img src={filmPic} alt="Alexis dancing with the sky" className="fade w-100"
+            style={{ opacity: `${this.state.bgImage === 'film' ? 1 : 0}`, position: 'fixed', top: 0 }} />
+          <img src={devPic} alt="Frontend coding" className="fade w-100"
+            style={{ opacity: `${this.state.bgImage === 'dev' ? 1 : 0}`, position: 'fixed', top: 0 }} />
+          <img src={vxx} alt="flower net on back" className="fade w-100"
             style={{ opacity: `${this.state.bgImage === 'vxx' ? 1 : 0}`, position: 'fixed', top: 0 }} />
-          <img src={designPic} alt="flower net on back" className="fade h-100"
-            style={{ opacity: `${this.state.bgImage === 'designPic' ? 1 : 0}`, position: 'fixed', top: 0 }} />
+          <img src={designPic} alt="flower net on back" className="fade w-100"
+            style={{ opacity: `${this.state.bgImage === 'design' ? 1 : 0}`, position: 'fixed', top: 0 }} />
 
           {/* TODO: make an icon that is 4 sq. grid to open up to grid view of art works */}
 
@@ -74,20 +75,21 @@ class Home extends React.Component {
             {/* subcategories */}
             <span className="d-flex flex-row font-weight-bold" style={{ zIndex: 20, marginTop: '-180px' }}>
               {/* TODO: differentiate hover state from selected state! and probably don't change bg if something is selected, until other thing selected */}
-              <h2 className={`${(this.state.bgImage === 'artPic' || this.state.focus === 'artPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
-                onMouseOver={() => { if (!this.state.focus) {this.setState({ bgImage: 'artPic' })} }}
+              <h2 className={`${(this.state.bgImage === 'art') ? 'subcat-selected' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
+                onMouseOver={() => { if (!this.state.focus) {this.setState({ bgImage: 'art' })} }}
                 onClick={() => { fadeBanner('art') }}>art</h2>
-              <h2 className={`${(this.state.bgImage === 'filmPic' || this.state.focus === 'filmPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
-                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'filmPic' }) }}}
+              <h2 className={`${(this.state.bgImage === 'film') ? 'subcat-selected' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
+                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'film' }) }}}
                 onClick={() => { fadeBanner('film') }}>film</h2>
-              <h2 className={`${(this.state.bgImage === 'designPic' || this.state.focus === 'designPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
-                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'designPic' }) }}}
+              <h2 className={`${(this.state.bgImage === 'design') ? 'subcat-selected' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
+                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'design' }) }}}
                 onClick={() => { fadeBanner('design') }}>design</h2>
-              <h2 className={`${(this.state.bgImage === 'devPic' || this.state.focus === 'devPic') ? 'subcat-hover' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
-                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'devPic' }) }}}
+              <h2 className={`${(this.state.bgImage === 'dev') ? 'subcat-selected' : 'subcat'} px-5 py-3 mx-2 mt-5 rounded-lg`}
+                onMouseOver={() => { if (!this.state.focus) { this.setState({ bgImage: 'dev' }) }}}
                 onClick={() => { fadeBanner('dev') }}>dev</h2>
             </span>
 
+            {/* TODO: fix arrow */}
             <a href={`#${this.state.focus}`}>
               <img src={arrow} alt="vxx" className="vxx-hover cursor-pointer"
                 onClick={() => this.setState({ landingText: false })}

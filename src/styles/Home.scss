@@ -12,6 +12,24 @@
   color: $gold;
 }
 
+.subcat {
+  cursor: pointer;
+  color: white;
+}
+
+.subcat:hover {
+  transition: color .4s background-color .4s opacity .4s;
+  cursor: pointer;
+  background-color: $box-shadow-dark;
+  color: $almost-gold;
+}
+
+.subcat-selected {
+  color: $gold;
+  background-color: $box-shadow-darker;
+  cursor: pointer;
+}
+
 .vxx-hover {
   opacity: 0;
   transition: opacity .4s;

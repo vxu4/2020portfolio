@@ -14,6 +14,7 @@ import { Link, withRouter } from 'react-router-dom';
 import Art_overall from './Art_Overall';
 import Gallery from '../components/gallery';
 import { GpsFixed } from '@material-ui/icons';
+import '../styles/IndivPages.scss';
 
 
 configureAnchors({ scrollDuration: 700 });
@@ -44,7 +45,9 @@ class Art extends React.Component {
           as={Link}
           to="/Art"
         >
-          <AppsIcon className="mb-5 text-dark cursor-pointer" onClick={this.onSubmit} />
+          <div className="p-5" onClick={this.onSubmit} >
+            <AppsIcon className="grid-icon cursor-pointer" />
+          </div>
         </Nav.Link>
         <Carousel slides={carouselThumbnails} />
       </div>
