@@ -45,3 +45,28 @@
   z-index: 0;
 }
 
+.menu-icon {
+  color: $gold;
+}
+
+.menu-icon:hover {
+  color: $dark-grey;
+}
+
+.side-menu {
+  right: 0;
+  transition: right .4s
+}
+
+.side-menu-collapsed {
+  right: -50%;
+}
+
+.side-menu-name {
+  color: white;
+  cursor: pointer
+}
+
+.side-menu-name:hover {
+  color: $dark-grey;
+}
