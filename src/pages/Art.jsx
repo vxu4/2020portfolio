@@ -1,19 +1,12 @@
 import React from 'react';
-import landingPic from '../assets/home_landingPic_3.jpg';
-import vxx from '../assets/figma/home_artPic.png';
-import artPic from '../assets/flowerNet.jpg';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
 import AppsIcon from '@material-ui/icons/Apps';
-import arrow from '../assets/arrow.svg';
 import Carousel from '../components/carousel/carousel';
-import carouselThumbnails from '../assets/carouselItems';
+import carouselThumbnails from '../assets/carousels/carouselItems';
 import { Redirect } from 'react-router-dom';
 import { Link, withRouter } from 'react-router-dom';
-import Art_overall from './Art_Overall';
-import Gallery from '../components/gallery';
-import { GpsFixed } from '@material-ui/icons';
 import '../styles/IndivPages.scss';
 
 
