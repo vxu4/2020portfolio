@@ -71,7 +71,7 @@ class NavBar extends React.Component {
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/Art"
+            to="/Design"
             className="p-0"
           >
             <div className="flex-row d-flex align-items-center py-3">

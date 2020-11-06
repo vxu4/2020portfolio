@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Art from './pages/Art_Overall';
 import Film from './pages/Film_Overall';
 import NavBar from './components/NavBar';
+import Design from './pages/Design_Overall';
+
 
 const RedirectToNotFound = () => <Redirect to="/404" />;
 
@@ -22,6 +24,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/Art" component={Art} />
         <Route exact path="/Film" component={Film} />
+        <Route exact path="/Design" component={Design} />
         <Route component={RedirectToNotFound} />
       </Switch>
     </div>
