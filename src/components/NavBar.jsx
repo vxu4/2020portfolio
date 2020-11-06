@@ -48,7 +48,7 @@ class NavBar extends React.Component {
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/Art"
+            to="/Film"
             className="p-0"
           >
             <h3 className="side-menu-name p-2">film</h3>

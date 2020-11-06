@@ -8,7 +8,7 @@ import './styles/BootstrapCustom.scss';
 import NotFound from './pages/Home';
 import Home from './pages/Home';
 import Art from './pages/Art_Overall';
-
+import Film from './pages/Film_Overall';
 import NavBar from './components/NavBar';
 
 const RedirectToNotFound = () => <Redirect to="/404" />;
@@ -21,6 +21,7 @@ const App = () => (
         <Route exact path="/404" component={NotFound} />
         <Route exact path="/" component={Home} />
         <Route exact path="/Art" component={Art} />
+        <Route exact path="/Film" component={Film} />
         <Route component={RedirectToNotFound} />
       </Switch>
     </div>

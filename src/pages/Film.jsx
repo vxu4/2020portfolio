@@ -17,7 +17,7 @@ const Film = () => {
     </ScrollableAnchor>
     <Nav.Link
       as={Link}
-      to="/Art"
+      to="/Film"
     >
       <div className="p-5"
       // onClick={this.onSubmit}

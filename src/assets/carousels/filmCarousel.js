@@ -1,10 +1,14 @@
 import beluCover from '../film/beluCover.png';
-import Estrella from '../home_filmPic.png';
+import Estrella from '../film/EstrellaHands.png';
+import Landing from '../film/landing/landing_fog2.jpg';
+import BeluConvo from '../film/beluConvVid/beluOcean.jpg';
 import ifyougrow from '../film/ifyougrow_cover.jpg';
 import Jamie from '../film/JamieSwing.JPG';
 import newMoon from '../film/newMoon.png';
 import siwtcomh from '../film/siwtcomh.jpg';
 import calligraphy from '../film/writing.png';
+import returnPic from '../film/photos/return.png';
+
 
 export const ArtThumbnails = [
   {
@@ -28,12 +32,32 @@ export const ArtThumbnails = [
     thumbnailHeight: 'auto',
   },
   {
-    title: "Belu Live Performance",
-    caption: "Belu Live Performance",
+    title: "Landing",
+    caption: "Landing",
     // description: "Raised on hip-hop and foster care, defiant city kid Ricky gets a fresh start in the New Zealand countryside. From the director of What We Do in the Shadows.",
-    imgUrl: beluCover,
-    src: beluCover,
-    thumbnail: beluCover, 
+    imgUrl: Landing,
+    src: Landing,
+    thumbnail: Landing, 
+    thumbnailWidth: 'auto',
+    thumbnailHeight: 'auto',
+  },
+  {
+    title: "Conversation with the Sun",
+    caption: "Conversation with the Sun",
+    // description: "Raised on hip-hop and foster care, defiant city kid Ricky gets a fresh start in the New Zealand countryside. From the director of What We Do in the Shadows.",
+    imgUrl: BeluConvo,
+    src: BeluConvo,
+    thumbnail: BeluConvo, 
+    thumbnailWidth: 'auto',
+    thumbnailHeight: 'auto',
+  },
+  {
+    title: "Return",
+    caption: "Return",
+    // description: "Raised on hip-hop and foster care, defiant city kid Ricky gets a fresh start in the New Zealand countryside. From the director of What We Do in the Shadows.",
+    imgUrl: returnPic,
+    src: returnPic,
+    thumbnail: returnPic, 
     thumbnailWidth: 'auto',
     thumbnailHeight: 'auto',
   },
@@ -47,6 +71,17 @@ export const ArtThumbnails = [
     thumbnailWidth: 'auto',
     thumbnailHeight: 'auto',
   },
+  {
+    title: "Belu Live Performance",
+    caption: "Belu Live Performance",
+    // description: "Raised on hip-hop and foster care, defiant city kid Ricky gets a fresh start in the New Zealand countryside. From the director of What We Do in the Shadows.",
+    imgUrl: beluCover,
+    src: beluCover,
+    thumbnail: beluCover, 
+    thumbnailWidth: 'auto',
+    thumbnailHeight: 'auto',
+  },
+
   {
     title: "Between Light and Sound",
     caption: "Between Light and Sound",

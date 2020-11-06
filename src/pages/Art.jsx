@@ -25,7 +25,6 @@ class Art extends React.Component {
     return location.pathname.startsWith(route);
   };
   onSubmit = () => {
-    console.log('hit');
     return <Redirect to="/Home" />
   }
   render() {

@@ -63,11 +63,11 @@
 }
 
 .side-menu-name {
-  color: $dark-grey;
+  color: white;
   cursor: pointer;
   transition: color .4s;
 }
 
 .side-menu-name:hover {
-  color: white;
+  color: $dark-grey;
 }
