@@ -5,7 +5,7 @@ import estrellaThumbnails from '../assets/carousels/filmOverallCarousel/estrella
 import landingThumbnails from '../assets/carousels/filmOverallCarousel/landing';
 
 export const Film_Overall = () => (
-  <div className="p-5 m-5 w-100 h-100">
+  <div className="py-5 my-5 w-100 h-100 d-flex flex-column align-items-center">
     <div className="w-100 py-4">
       <Carousel slides={estrellaThumbnails} />
     </div>

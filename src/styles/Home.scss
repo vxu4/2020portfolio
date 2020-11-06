@@ -55,7 +55,8 @@
 
 .side-menu {
   right: 0;
-  transition: right .4s
+  transition: right .4s;
+  z-index: 9999;
 }
 
 .side-menu-collapsed {

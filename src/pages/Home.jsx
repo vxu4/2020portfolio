@@ -42,7 +42,6 @@ class Home extends React.Component {
   //arrow function? consider making this all a banner component? and rendering a totally separate component underneath?
   render() {
     const fadeBanner = (subCat) => {
-      console.log('hi');
       this.setState({ banner: false, bgImage: subCat, focus: subCat });
     }
 
@@ -69,7 +68,7 @@ class Home extends React.Component {
           <div className="fade d-flex flex-column align-items-center justify-content-center"
             style={{ opacity: `${this.state.landingText ? 1 : 1}` }}>
             <img src={banner} alt="vxx banner" className="w-100 fade"
-              style={{ opacity: `${this.state.banner ? 1 : 0}`, width: "100vw", maxWidth: '100vw', marginTop: '10vw', zIndex: 10 }} />
+              style={{ opacity: `${this.state.banner ? 1 : 0}`, width: "100vw", maxWidth: '100vw', marginTop: '16vh', zIndex: 10 }} />
 
             {/* subcategories */}
             <span className="d-flex flex-row font-weight-bold" style={{ zIndex: 20, marginTop: '-180px' }}>
